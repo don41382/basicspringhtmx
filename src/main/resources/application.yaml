@@ -1,0 +1,5 @@
+gg:
+  jte:
+    templateSuffix: .kte
+    templateLocation: src/main/kotlin/com/umbrella/htmx/web
+    developmentMode: true

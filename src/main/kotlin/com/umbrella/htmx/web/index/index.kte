@@ -1,0 +1,20 @@
+<html lang="de">
+<head>
+    <title>Shop</title>
+    <script src="/webjars/htmx.org/1.9.5/dist/htmx.min.js"></script>
+    <link href="/daisy.full.min.css" rel="stylesheet" type="text/css"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="hero min-h-screen bg-base-100">
+        <div class="hero-content text-center">
+            <div class="max-w-md">
+                <h1 class="text-6xl font-bold">Welcome!</h1>
+                <p class="py-6">Just click on the button and htmx will exchange the content.</p>
+                <button hx-get="/hello"
+                        class="btn btn-primary">Click me!</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
