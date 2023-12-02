@@ -11,9 +11,9 @@ class HomeController {
 
     @GetMapping("/hello")
     fun hello(model: Model): String {
-        model.addAttribute("text", "You can't click me again!")
+        model.addAttribute("text", "Sorry, you can't click me again.")
         model.addAttribute("disable", true)
-        return "home/hellobutton"
+        return "home/hello_button"
     }
 
 }

@@ -20,6 +20,7 @@ bin/
 ## JTE
 jte-classes
 
+
 ### IntelliJ IDEA ###
 .idea
 *.iws
@@ -28,5 +29,3 @@ jte-classes
 out/
 !**/src/main/**/out/
 !**/src/test/**/out/
-
-

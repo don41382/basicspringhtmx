@@ -1,6 +1,0 @@
-@param text: String
-@param disable: Boolean
-
-<button hx-get="/home/hello" hx-swap="outerHTML" class="btn btn-primary" disabled="${disable}">
-    ${text}
-</button>

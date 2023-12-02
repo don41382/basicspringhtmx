@@ -1,5 +1,7 @@
 @import gg.jte.Content
+@import com.umbrella.htmx.navigation.Navigation.Site
 
+@param currentSite: Site
 @param content: Content
 
 <html lang="de">
@@ -10,9 +12,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <div class="navbar bg-primary text-base-100">
-        <a class="btn btn-ghost text-xl" href="/">Simple HTMX</a>
-        <a class="btn btn-ghost text-xl" href="/counter">Stateful Counter</a>
+    <div class="navbar gap-4">
+        <a class="btn ${if (currentSite == Site.HOME) "btn-outline" else "btn-ghost"} text-xl" href="/">Simple HTMX</a>
+        <a class="btn ${if (currentSite == Site.COUNTER) "btn-outline" else "btn-ghost"} text-xl" href="/counter">Stateful Counter</a>
     </div>
     <div class="hero min-h-[85%]">
         ${content}

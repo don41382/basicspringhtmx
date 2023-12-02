@@ -1,4 +1,6 @@
-@template.index.index(content = @`
+@import com.umbrella.htmx.navigation.Navigation
+
+@template.index.index(currentSite = Navigation.Site.COUNTER, content = @`
     <div class="hero-content text-center">
         <div class="max-w-md">
             <h1 class="text-4xl font-bold">Counter Example</h1>
