@@ -1,0 +1,13 @@
+@template.index.index(content = @`
+    <div class="hero-content text-center">
+        <div class="max-w-md">
+            <h1 class="text-4xl font-bold">Counter Example</h1>
+            <p class="py-6">Click to count. The counter will update the request parameter.</p>
+            <button
+                    hx-get="/counter/count"
+                    class="btn btn-primary">
+                Click me!
+            </button>
+        </div>
+    </div>
+`)

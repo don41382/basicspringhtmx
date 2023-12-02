@@ -1,6 +1,7 @@
 package com.umbrella.htmx.web.home
 
 import org.springframework.stereotype.Controller
+import org.springframework.ui.Model
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RequestMapping
 
@@ -9,8 +10,10 @@ import org.springframework.web.bind.annotation.RequestMapping
 class HomeController {
 
     @GetMapping("/hello")
-    fun hello(): String {
-        return "home/hello"
+    fun hello(model: Model): String {
+        model.addAttribute("text", "You can't click me again!")
+        model.addAttribute("disable", true)
+        return "home/hellobutton"
     }
 
 }

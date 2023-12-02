@@ -1,0 +1,3 @@
+@param count: Int
+
+<p>You clicked ${count} times.</p>

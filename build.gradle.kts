@@ -23,7 +23,6 @@ repositories {
 dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-web")
 	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
-	implementation("org.springframework.boot:spring-boot-devtools")
 
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 
@@ -33,7 +32,7 @@ dependencies {
 
 	implementation("org.webjars.npm:htmx.org:1.9.5")
 
-	developmentOnly("org.springframework.boot:spring-boot-devtools:3.0.4")
+	developmentOnly("org.springframework.boot:spring-boot-devtools")
 }
 
 sourceSets {

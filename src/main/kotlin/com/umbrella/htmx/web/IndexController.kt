@@ -10,4 +10,7 @@ class IndexController {
     fun index(): String =
         "home/home"
 
+    @GetMapping("/counter")
+    fun counter(): String =
+        "counter/counter"
 }

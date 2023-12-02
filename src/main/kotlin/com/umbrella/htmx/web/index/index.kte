@@ -10,6 +10,24 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    ${content}
+    <div class="navbar bg-primary text-base-100">
+        <a class="btn btn-ghost text-xl" href="/">Simple HTMX</a>
+        <a class="btn btn-ghost text-xl" href="/counter">Stateful Counter</a>
+    </div>
+    <div class="hero min-h-[85%]">
+        ${content}
+    </div>
+    <script>
+        document.body.addEventListener('htmx:configRequest', function(evt) {
+            <!-- This is a need way to send query parameter to the backend via http header -->
+            let queryParams = new URLSearchParams(window.location.search);
+            queryParams.forEach((value, key) => {
+                evt.detail.headers['query_' + key] = value;
+            })
+        });
+        document.body.addEventListener('htmx:responseError', function(req, elt, target) {
+            console.error("Request returned with an error", req.detail.error)
+        })
+    </script>
 </body>
 </html>
