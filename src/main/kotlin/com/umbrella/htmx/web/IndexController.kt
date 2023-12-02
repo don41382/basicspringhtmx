@@ -8,12 +8,6 @@ class IndexController {
 
     @GetMapping("/")
     fun index(): String =
-        "index/index"
-
-
-    @GetMapping("/hello")
-    fun hello(): String {
-        return "index/hello"
-    }
+        "home/home"
 
 }

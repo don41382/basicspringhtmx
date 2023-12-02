@@ -1,3 +1,7 @@
+@import gg.jte.Content
+
+@param content: Content
+
 <html lang="de">
 <head>
     <title>Shop</title>
@@ -6,15 +10,6 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <div class="hero min-h-screen bg-base-100">
-        <div class="hero-content text-center">
-            <div class="max-w-md">
-                <h1 class="text-6xl font-bold">Welcome!</h1>
-                <p class="py-6">Just click on the button and htmx will exchange the content.</p>
-                <button hx-get="/hello"
-                        class="btn btn-primary">Click me!</button>
-            </div>
-        </div>
-    </div>
+    ${content}
 </body>
 </html>
