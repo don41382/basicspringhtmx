@@ -2,9 +2,8 @@
 @param disable: Boolean
 
 <button
-        hx-get="/home/hello"
-        hx-swap="outerHTML"
-        class="btn btn-primary"
-        disabled="${disable}">
+   hx-get="/home/hello"
+   hx-swap="outerHTML"
+   class="rounded-md px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm ${if (disable) "bg-indigo-100" else "bg-indigo-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 hover:bg-indigo-500"}">
     ${text}
 </button>

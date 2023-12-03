@@ -1,13 +1,13 @@
 @import com.umbrella.htmx.navigation.Navigation
 
 @template.index.index(currentSite = Navigation.Site.COUNTER, content = @`
-    <div class="hero-content text-center">
-        <div class="max-w-md">
-            <h1 class="text-4xl font-bold">Counter Example</h1>
-            <p class="py-6">Click to count. The counter will update the request parameter.</p>
+    <div class="text-center grid grid-cols-1">
+        <h1 class="text-4xl font-bold">Counter Example</h1>
+        <p>Click to count. The counter will update the request parameter.</p>
+        <div class="pt-4">
             <button
                     hx-get="/counter/count"
-                    class="btn btn-primary">
+                    class="rounded-md px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm bg-indigo-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 hover:bg-indigo-500">
                 Click me!
             </button>
         </div>
