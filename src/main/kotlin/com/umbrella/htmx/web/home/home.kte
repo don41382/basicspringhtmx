@@ -1,10 +1,10 @@
 @import com.umbrella.htmx.navigation.Navigation
 
 @template.index.index(currentSite = Navigation.Site.HOME, content = @`
-    <div class="text-center grid grid-cols-1">
+    <div class="text-center grid grid-cols-1 max-w-xl">
         <h1 class="text-4xl font-bold">Simple HTMX Example</h1>
-        <p class="">Just click on the button and htmx will exchange the content.</p>
-        <div class="pt-4">
+        <p class="mt-4">Just click on the button and htmx will exchange the content of it. This demonstrates the usage of templates with parameter and how to update them.</p>
+        <div class="mt-8">
             @template.home.hello_button(text = "Please click me!", disable = false)
         </div>
     </div>

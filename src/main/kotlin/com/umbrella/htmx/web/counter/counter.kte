@@ -1,10 +1,10 @@
 @import com.umbrella.htmx.navigation.Navigation
 
 @template.index.index(currentSite = Navigation.Site.COUNTER, content = @`
-    <div class="text-center grid grid-cols-1">
+    <div class="text-center grid grid-cols-1 max-w-xl">
         <h1 class="text-4xl font-bold">Counter Example</h1>
-        <p>Click to count. The counter will update the request parameter.</p>
-        <div class="pt-4">
+        <p class="mt-4">Click to count. The counter will update the button counter and persist the count via the request parameter.</p>
+        <div class="mt-8">
             <button
                     hx-get="/counter/count"
                     class="rounded-md px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm bg-indigo-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 hover:bg-indigo-500">

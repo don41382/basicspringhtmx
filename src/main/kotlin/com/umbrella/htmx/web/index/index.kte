@@ -26,7 +26,7 @@
     </div>
     <script>
         document.body.addEventListener('htmx:configRequest', function(evt) {
-            <!-- This is a need way to send query parameter to the backend via http header -->
+            <!-- This is a neat way to send query parameter to the backend via http header -->
             let queryParams = new URLSearchParams(window.location.search);
             queryParams.forEach((value, key) => {
                 evt.detail.headers['query_' + key] = value;
